@@ -1,17 +1,29 @@
-// Quyen Le
-//
+// Name: Quyen Le
+// UCFID: 5609279
 
 #include <stdio.h>
 #include <math.h>
 
-double calculateDistance();
-{
+#define PI 3.14159
+
+int main(int argc, char **argv) {
+    double calculateDistance();
+    double calculatePerimeter();
+    double calculateArea();
+    double calculateWidth();
+    double calculateHeight();
+    return 0;
+}
+
+double calculateDistance() {
     double x1, y1, x2, y2 = 0;
 
-    scanf("%lf %lf", &x1, &y1);
-    scanf("%lf %lf", &x2, &y2);
+    scanf("%lf", &x1);
+    scanf("%lf", &y1);
+    scanf("%lf", &x2);
+    scanf("%lf", &y2);
 
-    distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1,2));
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
     printf("Point #1 entered: x1 = %lf; y1 = %lf", x1, y1);
     printf("Point #2 entered: x2 = %lf; y2 = %lf", x2, y2);
@@ -20,4 +32,73 @@ double calculateDistance();
     return distance;
 }
 
-printf(distance)
+double calculatePerimeter() {
+    double x1, y1, x2, y2 = 0;
+
+    scanf("%lf", &x1);
+    scanf("%lf", &y1);
+    scanf("%lf", &x2);
+    scanf("%lf", &y2);
+
+    double distance = calculateDistance();
+    double radius = distance / 2;
+    double perimeter = 2 * PI * radius;
+
+    printf("Point #1 entered: x1 = %lf; y1 = %lf", x1, y1);
+    printf("Point #2 entered: x2 = %lf; y2 = %lf", x2, y2);
+    printf("The perimeter of the city encompassed by your re-quest is %lf", perimeter);
+    return 3.0;
+}
+
+double calculateArea() {
+    double x1, y1, x2, y2 = 0;
+
+    scanf("%lf", &x1);
+    scanf("%lf", &y1);
+    scanf("%lf", &x2);
+    scanf("%lf", &y2);
+    
+    double distance = calculateDistance();
+    double radius = distance / 2;
+    double area = PI * pow(radius, 2);
+
+    printf("Point #1 entered: x1 = %lf; y1 = %lf", x1, y1);
+    printf("Point #2 entered: x2 = %lf; y2 = %lf", x2, y2);
+    printf("The area of the city encompassed by your request is %lf", area);
+
+    return 2.0;
+}
+
+double calculateWidth() {
+    double x1, y1, x2, y2 = 0;
+
+    scanf("%lf", &x1);
+    scanf("%lf", &y1);
+    scanf("%lf", &x2);
+    scanf("%lf", &y2);
+
+    double width = calculateDistance();
+
+    printf("Point #1 entered: x1 = %lf; y1 = %lf", x1, y1);
+    printf("Point #2 entered: x2 = %lf; y2 = %lf", x2, y2);
+    printf("The width of the city encompassed by your request is %lf", width);
+
+    return 1.0;
+}
+
+double calculateHeight() {
+    double x1, y1, x2, y2 = 0;
+
+    scanf("%lf", &x1);
+    scanf("%lf", &y1);
+    scanf("%lf", &x2);
+    scanf("%lf", &y2);
+
+    double height = calculateDistance();
+
+    printf("Point #1 entered: x1 = %lf; y1 = %lf", x1, y1);
+    printf("Point #2 entered: x2 = %lf; y2 = %lf", x2, y2);
+    printf("The width of the city encompassed by your request is %lf", height);
+
+    return 1.0;
+}
