@@ -106,7 +106,7 @@ double calculateHeight() {
 
     printf("Point #1 entered: x1 = %.3lf; y1 = %.3lf\n", x1, y1);
     printf("Point #2 entered: x2 = %.3lf; y2 = %.3lf\n", x2, y2);
-    printf("The height of the city encompassed by your request is %.lf\n", height);
+    printf("The height of the city encompassed by your request is %.3lf\n", height);
 
     return 1.0;
 }
