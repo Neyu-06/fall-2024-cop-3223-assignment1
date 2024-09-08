@@ -23,6 +23,7 @@ int main(int argc, char **argv) {
     return 0;
 }
 
+// Function that calculates distance and return it
 double distanceCalc() {
     double x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
@@ -39,6 +40,7 @@ double distanceCalc() {
     return distance;
 }
 
+// Function that prints and return distance
 double calculateDistance() {
     double distance = distanceCalc();
 
@@ -47,6 +49,7 @@ double calculateDistance() {
     return distance;
 }
 
+// Function to calculate and print perimeter
 double calculatePerimeter() {
     double distance = distanceCalc();
     double radius = distance / 2;
@@ -56,6 +59,7 @@ double calculatePerimeter() {
     return 4.0;
 }
 
+// Function to calculate and print area
 double calculateArea() {
     double distance = distanceCalc();
     double radius = distance / 2;
@@ -66,6 +70,7 @@ double calculateArea() {
     return 4.0;
 }
 
+// Function to calculate and print width
 double calculateWidth() {
     double width = distanceCalc();
 
@@ -74,6 +79,7 @@ double calculateWidth() {
     return 2.0;
 }
 
+// Function to calculate and print height
 double calculateHeight() {
     double height = distanceCalc();
 
