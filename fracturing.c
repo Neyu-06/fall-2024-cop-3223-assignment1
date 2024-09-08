@@ -15,13 +15,12 @@ int main(int argc, char **argv) {
     return 0;
 }
 
-double calculateDistance() {
-    double x1, y1, x2, y2 = 0;
+void askForUserInput() {
+    double
+}
 
-    scanf("%lf", &x1);
-    scanf("%lf", &y1);
-    scanf("%lf", &x2);
-    scanf("%lf", &y2);
+double calculateDistance() {
+    double x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
     double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
@@ -33,7 +32,7 @@ double calculateDistance() {
 }
 
 double calculatePerimeter() {
-    double x1, y1, x2, y2 = 0;
+    double x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
     scanf("%lf", &x1);
     scanf("%lf", &y1);
@@ -51,7 +50,7 @@ double calculatePerimeter() {
 }
 
 double calculateArea() {
-    double x1, y1, x2, y2 = 0;
+    double x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
     scanf("%lf", &x1);
     scanf("%lf", &y1);
@@ -70,7 +69,7 @@ double calculateArea() {
 }
 
 double calculateWidth() {
-    double x1, y1, x2, y2 = 0;
+    double x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
     scanf("%lf", &x1);
     scanf("%lf", &y1);
@@ -87,7 +86,7 @@ double calculateWidth() {
 }
 
 double calculateHeight() {
-    double x1, y1, x2, y2 = 0;
+    double x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
     scanf("%lf", &x1);
     scanf("%lf", &y1);
@@ -98,7 +97,7 @@ double calculateHeight() {
 
     printf("Point #1 entered: x1 = %lf; y1 = %lf", x1, y1);
     printf("Point #2 entered: x2 = %lf; y2 = %lf", x2, y2);
-    printf("The width of the city encompassed by your request is %lf", height);
+    printf("The height of the city encompassed by your request is %lf", height);
 
     return 1.0;
 }
