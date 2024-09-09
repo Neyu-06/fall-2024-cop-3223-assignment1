@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
     return 0;
 }
 
-// Function that calculates distance and return it
+// Helper function that calculates distance and prints inputted points
 double distanceCalc() {
     double x1 = 0, y1 = 0, x2 = 0, y2 = 0;
 
